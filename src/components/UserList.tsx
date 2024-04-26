@@ -1,8 +1,8 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useTypesSelector } from "./hooks/useTypeSelector";
 
 const UserList: React.FC = () => {
-    const store = useSelector((store) => store);
+    const { users, error, loading } = useTypesSelector((state) => state.user);
     return <div></div>;
 };
 
