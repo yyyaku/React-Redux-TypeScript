@@ -1,5 +1,3 @@
-import { applyMiddleware, createStore } from "redux";
-import { thunk } from "redux-thunk";
 import { UserAction, UserActionTypes, UserState } from "../../types/user";
 
 const initialState: UserState = {
@@ -23,5 +21,3 @@ export const userReducer = (
             return state;
     }
 };
-
-const store = createStore(userReducer, applyMiddleware(thunk));
