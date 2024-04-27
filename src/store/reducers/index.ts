@@ -1,9 +1,11 @@
 import { combineReducers } from "redux";
 import { userReducer } from "./userReducer";
 import { store } from "..";
+import { todoReducer } from "./todoReducer";
 
 export const rootReducer = combineReducers({
     user: userReducer,
+    todo: todoReducer,
 });
 
 // в файле UserList state.users - не сущевствует, потому что useSelector с типами не дружит
